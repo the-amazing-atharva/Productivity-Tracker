@@ -3,27 +3,73 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="hero.css" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
     <title>Todo List</title>
   </head>
   <body>
-    <h1>Be Productive</h1>
-    <form id="form">
-      <input
-        type="text"
-        class="input"
-        id="input"
-        placeholder="Enter your todo"
-        autocomplete="off"
-      />
+    <header class="header">
+      <a href="#" class="logo">Be<span class="logo-span">Productive</span></a>
 
-      <ul class="todos" id="todos"></ul>
-    </form>
-    <small
-      >Left click to toggle completed. <br />
-      Right click to delete todo</small
-    >
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="#">Home</a></li>
+          <li><a class="main-nav-link" href="#">About</a></li>
+          <li><a class="main-nav-link" href="#todo">Timer</a></li>
+          <li><a class="main-nav-link nav-cta" href="#">TODO</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section-hero">
+        <div class="hero">
+          <div class="hero-text-box">
+            <h1 class="heading-primary">
+              Be<span class="logo-span">Productive</span> and <br />Get Things
+              <span class="logo-span">Done!</span>
+            </h1>
+            <p class="hero-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+              itaque iste molestiae sed expedita iure quibusdam? Deserunt a
+              nesciunt molestiae?
+            </p>
+            <a href="#" class="btn btn--full margin-right-sm"
+              >Jump To Tracker</a
+            >
+            <a href="#" class="btn btn--outline">Learn more &darr;</a>
+          </div>
+          <div class="hero-img-box">
+            <img
+              src="https://img.freepik.com/free-vector/business-man-working-hard-stock-financial-trade-market-diagram-vector-illustration-flat-design_1150-39773.jpg?w=740&t=st=1701713434~exp=1701714034~hmac=826458c77c71e773993f17d4393d77daa1a815507818ae7582c602cf83f5242e"
+              class="hero-img"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="section-todo" id="todo">
+        <h1 class="todo-heading">Be Productive</h1>
+        <form id="form">
+          <input
+            type="text"
+            class="input"
+            id="input"
+            placeholder="Enter your todo"
+            autocomplete="off"
+          />
+
+          <ul class="todos" id="todos"></ul>
+        </form>
+        <span class="todo-small">
+          Left click to toggle completed. <br />
+          Right click to delete todo</span
+        >
+      </section>
+    </main>
 
     <script src="script.js"></script>
+    <script src="scroll.js"></script>
   </body>
 </html>

@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-body {
+/* body {
   background-color: #f5f5f5;
   color: #444;
   font-family: "Poppins", sans-serif;
@@ -14,15 +14,14 @@ body {
   justify-content: center;
   height: 100vh;
   margin: 0;
-}
+} */
 
-h1 {
-  /* color: rgb(179, 131, 226); */
+/* h1 {
   color: #087f5b;
   font-size: 8rem;
   text-align: center;
   opacity: 0.4;
-}
+} */
 
 form {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
