@@ -244,14 +244,14 @@ strong {
   color: #333;
   font-weight: 500;
   font-size: 2rem;
-  transition: all 0.3s;
+  transition: all 0.2s;
 }
 
 .main-nav-link:hover,
 .main-nav-link:active {
   color: #1971c2;
   font-weight: 700;
-  scale: 1.07;
+  scale: 1.04;
 }
 
 .main-nav-link.nav-cta:link,
@@ -275,7 +275,7 @@ strong {
 .section-hero {
   background-color: #fff;
   padding: 4.8rem 0 9.6rem 0;
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 
 .hero {
@@ -296,6 +296,70 @@ strong {
 
 .hero-img {
   width: 100%;
+}
+
+/**************************/
+/* HOW SECTION */
+/**************************/
+.section-how {
+  padding: 9.6rem 0;
+}
+
+.step-description {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 3rem;
+}
+
+.step-img-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.step-img {
+  width: 50%;
+  /* z-index: 10; */
+}
+
+/**************************/
+/* FEATURE SECTION */
+/**************************/
+.section-feature {
+  padding: 9.6rem 0;
+}
+
+.feature-icon {
+  color: #1971c2;
+  height: 3.2rem;
+  width: 3.2rem;
+  background-color: #d0ebff;
+  margin-bottom: 3.2rem;
+  padding: 1.6rem;
+  border-radius: 50%;
+}
+
+.feature-icon:hover {
+  scale: 1.1;
+}
+
+.feature-title {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+
+.feature-title:hover {
+  color: #1971c2;
+  font-weight: 700;
+  scale: 1.03;
+}
+
+.feature-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
 }
 
 /**************************/

@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="hero.css" />
     <!-- <link rel="stylesheet" href="style.css" /> -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+
     <title>Todo List</title>
   </head>
   <body>
@@ -13,16 +22,16 @@
 
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a class="main-nav-link" href="#">Home</a></li>
-          <li><a class="main-nav-link" href="#">About</a></li>
-          <li><a class="main-nav-link" href="#todo">Timer</a></li>
-          <li><a class="main-nav-link nav-cta" href="#">TODO</a></li>
+          <li><a class="main-nav-link" href="#home">Home</a></li>
+          <li><a class="main-nav-link" href="#info">About</a></li>
+          <li><a class="main-nav-link" href="#timer">Timer</a></li>
+          <li><a class="main-nav-link nav-cta" href="#todo">TODO</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <section class="section-hero">
+      <section class="section-hero" id="home">
         <div class="hero">
           <div class="hero-text-box">
             <h1 class="heading-primary">
@@ -30,14 +39,16 @@
               <span class="logo-span">Done!</span>
             </h1>
             <p class="hero-description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
-              itaque iste molestiae sed expedita iure quibusdam? Deserunt a
-              nesciunt molestiae?
+              Effectively finish all your tasks of the day and 'get things done'
+              by using this task tracker and applying the given principles.
+              <br /><br /><strong
+                >P.S: Don't forget about the pomodoro timer</strong
+              >
             </p>
-            <a href="#" class="btn btn--full margin-right-sm"
+            <a href="#todo" class="btn btn--full margin-right-sm"
               >Jump To Tracker</a
             >
-            <a href="#" class="btn btn--outline">Learn more &darr;</a>
+            <a href="#info" class="btn btn--outline">Learn more &darr;</a>
           </div>
           <div class="hero-img-box">
             <img
@@ -45,6 +56,88 @@
               class="hero-img"
               alt=""
             />
+          </div>
+        </div>
+      </section>
+
+      <section class="section-feature" id="info">
+        <div class="container center-text">
+          <span class="subheading">INFO</span>
+          <h2 class="heading-secondary">GET THINGS DONE ON TIME</h2>
+        </div>
+
+        <div class="container grid grid--4-cols">
+          <div class="feature">
+            <ion-icon class="feature-icon" name="infinite-outline"></ion-icon>
+            <p class="feature-title">Collecting</p>
+            <p class="feature-text">
+              100% of all tasks, projects and various data should be collected
+              and written down for optimised work.
+            </p>
+          </div>
+          <div class="feature">
+            <ion-icon class="feature-icon" name="bulb-outline"></ion-icon>
+            <p class="feature-title">Processing</p>
+            <p class="feature-text">
+              After writing down the data, process it, by asking yourself
+              specific questions about the task.
+            </p>
+          </div>
+          <div class="feature">
+            <ion-icon
+              class="feature-icon"
+              name="color-filter-outline"
+            ></ion-icon>
+            <p class="feature-title">Organizing</p>
+            <p class="feature-text">
+              The processed data should then be written down on a next-action
+              list, trashed, saved for later.
+            </p>
+          </div>
+          <div class="feature">
+            <ion-icon class="feature-icon" name="play-outline"></ion-icon>
+            <p class="feature-title">Reviewing/Doing</p>
+            <p class="feature-text">
+              Reviewing the system to be clean, current and complete, it is time
+              to begin doing the various actions.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-how" id="timer">
+        <div class="container center-text">
+          <span class="subheading">ADDITIONAL TOOL</span>
+          <h2 class="heading-secondary">TRACK YOUR TIME WHILE DOING TASKS</h2>
+        </div>
+
+        <div class="container grid grid--2-cols grid--center-v">
+          <div class="step-img-box">
+            <img class="step-img step-img2" src="pomodoro.png" alt="" />
+          </div>
+
+          <div class="step-text-box">
+            <h2 class="heading-tertiary">The Pomodoro Timer</h2>
+            <p class="step-description">
+              The Pomodoro Technique is a time management method based on
+              25-minute stretches of focused work broken by five-minute breaks.
+              Longer breaks, typically 15 to 30 minutes, are taken after four
+              consecutive work intervals.
+            </p>
+
+            <a
+              href="https://pomofocus.io/"
+              target="_blank"
+              class="btn btn--full margin-right-sm"
+              >Click Here</a
+            >
+
+            <a
+              href="https://en.wikipedia.org/wiki/Pomodoro_Technique"
+              target="_blank"
+              class="btn btn--outline"
+              >Learn more</a
+            >
           </div>
         </div>
       </section>
